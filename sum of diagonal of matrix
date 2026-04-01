@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,rows,columns,a[10][10],sum=0;
+printf("please enter the number of rows and coulums:\n");
+scanf("%d %d",&i,&j);
+printf("please enter the matrix element\n");
+for (rows=0;rows<i;rows++)
+{
+    for(columns=0;columns<j;columns++)
+    {
+        scanf("%d",&a[rows][columns]);
+    }
+}
+for(rows=0;rows<i;rows++)
+{
+    sum=sum+a[rows][columns];
+}
+printf("the sum of diagonal elements of a matrix =%d",sum);
+return 0;
+    }
